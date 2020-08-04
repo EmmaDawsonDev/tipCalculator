@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+<h1>Quick Tip</h1>
+<section>
+    <div class="bill">
+        <label for="">Bill</label>
+        <input type="number" placeholder="Your bill" id="yourBill">
+
+    </div>
+    <div>
+        <div  class="space-between">
+            <label for="">Select tip</label>
+            <span id="tipPercent"></span>
+        </div>
+        <input type="range" value="0" id="tipInput" min="0" max="100">
+    </div>
+    <div  class="space-between">
+        <span>Tip</span>
+        <span id="tipValue"></span>
+    </div>
+    <hr>
+    <div  class="space-between total">
+        <span>Total</span>
+        <span id="totalWithTip"></span>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div  class="space-between">
+            <label for="splitInput">Split</label>
+            <span id="splitValue">1 person</span>
+        </div>
+        <input type="range" min="1" max="10" value="1" id="splitInput">
+    </div>
+    
+
+    <div  class="space-between">
+        <span>Bill each</span>
+        <span id="billEach"></span>
+    </div>
+
+    <div  class="space-between">
+        <span>Tip each</span>
+        <span id="tipEach"></span>
+    </div>
+</section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
